@@ -16,18 +16,18 @@
 
 There are some executable that require to be added to `~/.dwm/autostart.h` to make them work
 
-- `bash
+`
 #!/bin/bash
 xrandr --output LVDS-1 --off &
 exec slstatus &
 nitrogen --restore &
-exec comptopn &
+exec compton &
 `
 The executables like slstatus and compton needs to be symlink so you have to do the next:
 
 - `sudo ls -sf ~/.config/suckless/slstatus/slstatus /usr/local/bin`
-- `sudo ls -sf ~/.config/suckless/comptopn/compton /usr/local/bin`
+- `sudo ls -sf ~/.config/suckless/compton/compton /usr/local/bin`
 
 You have to change `autostart.h` permissions to exec
 
-- `chmod x+ autostart.sh`
+- `chmod +x autostart.sh`

@@ -6,12 +6,6 @@
     - `make`
     - `sudo make clean install`
 
-- Find the libraries that are missing, you can use a tool like:
-    - `apt-file search <dependy-name>`
-
-- It could be that there are many dependencies try to find that one that install all.
-
-
 ## Add autostart.sh
 
 There are some executable that require to be added to `~/.dwm/autostart.sh` to make them work

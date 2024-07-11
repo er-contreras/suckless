@@ -12,13 +12,13 @@
 - It could be that there are many dependencies try to find that one that install all.
 
 
-## Add autostart.h
+## Add autostart.sh
 
-There are some executable that require to be added to `~/.dwm/autostart.h` to make them work
+There are some executable that require to be added to `~/.dwm/autostart.sh` to make them work
 
 `
 #!/bin/bash
-xrandr --output LVDS-1 --off &
+xrandr --output eDP-1 --off &
 exec slstatus &
 nitrogen --restore &
 exec compton &
@@ -28,6 +28,6 @@ The executables like slstatus and compton needs to be symlink so you have to do 
 - `sudo ls -sf ~/.config/suckless/slstatus/slstatus /usr/local/bin`
 - `sudo ls -sf ~/.config/suckless/compton/compton /usr/local/bin`
 
-You have to change `autostart.h` permissions to exec
+You have to change `autostart.sh` permissions to exec
 
 - `chmod +x autostart.sh`

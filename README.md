@@ -44,7 +44,7 @@ exec compton &
 ```
 
 You gonna need to install and run compton in the next path `~/.config/suckless/`
-- `got clone https://github.com/chjj/compton`
+- `git clone https://github.com/chjj/compton`
 
 Dependencies when Fedora is use as distro
 

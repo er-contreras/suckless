@@ -46,6 +46,16 @@ exec compton &
 You gonna need to install and run compton in the next path `~/.config/suckless/`
 - `got clone https://github.com/chjj/compton`
 
+Dependencies when Fedora is use as distro
+
+- `sudo dnf install libXcomposite-devel`
+- `sudo dnf install libXdamage-devel`
+- `sudo dnf install libXrandr-devel`
+- `sudo dnf install libconfig-devel`
+- `sudo dnf install debus-devel`
+- `sudo dnf install libGL-devel`
+- `sudo dnf install pcre-devel`
+
 The executables like slstatus and compton needs to be symlink so you have to do the next:
 
 - `sudo ls -sf ~/.config/suckless/slstatus/slstatus /usr/local/bin`

@@ -65,6 +65,10 @@ You have to change `autostart.sh` permissions to exec
 
 - `chmod +x autostart.sh`
 
+## Try some KDE wallpaper they are cool
+
+- `https://github.com/KDE/plasma-workspace-wallpapers`
+
 ## For patching
 
 Example:

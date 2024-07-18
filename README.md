@@ -4,16 +4,16 @@
 
 Installation libraries
 
-- xorg
-- gcc
-- libX11-devel
-- libXft-devel
-- libXinerama-devel
+```
+sudo dnf install xorg gcc libX11-devel libXft-devel libXinerama-devel
+```
 
 Besides any desktop you are using you gonna need to create one
 
-- `/usr/share/xsessions`
-- `touch dwm.desktop`
+```
+/usr/share/xsessions
+touch dwm.desktop
+```
 
 Add the next
 
@@ -27,9 +27,11 @@ Icon=dwm
 Type=XSession
 ```
 
-- The directories as dwm, st and dmenu doesn't have any change until here, you just have to compile and run
-    - `make`
-    - `sudo make clean install`
+The directories as dwm, st and dmenu doesn't have any change until here, you just have to compile and run
+  ```
+  make
+  sudo make clean install
+  ```
 
 ## Add autostart.sh
 
@@ -43,41 +45,50 @@ nitrogen --restore &
 exec compton &
 ```
 
-You gonna need to install and run compton in the next path `~/.config/suckless/`
-- `git clone https://github.com/chjj/compton`
+You gonna need to install and run compton in the next path ~/.config/suckless/
+
+```
+git clone https://github.com/chjj/compton
+```
 
 Dependencies when Fedora is use as distro
 
-- `sudo dnf install libXcomposite-devel`
-- `sudo dnf install libXdamage-devel`
-- `sudo dnf install libXrandr-devel`
-- `sudo dnf install libconfig-devel`
-- `sudo dnf install debus-devel`
-- `sudo dnf install libGL-devel`
-- `sudo dnf install pcre-devel`
+```
+sudo dnf install libXcomposite-devel libXdamage-devel libXrandr-devel libconfig-devel debus-devel libGL-devel pcre-devel
+```
 
 The executables like slstatus and compton needs to be symlink so you have to do the next:
 
-- `sudo ls -sf ~/.config/suckless/slstatus/slstatus /usr/local/bin`
-- `sudo ls -sf ~/.config/suckless/compton/compton /usr/local/bin`
+```
+sudo ls -sf ~/.config/suckless/slstatus/slstatus /usr/local/bin
+```
+```
+sudo ls -sf ~/.config/suckless/compton/compton /usr/local/bin
+```
 
 You have to change `autostart.sh` permissions to exec
 
-- `chmod +x autostart.sh`
+```
+chmod +x autostart.sh
+```
 
 ## Try some KDE wallpaper they are cool
 
-- `https://github.com/KDE/plasma-workspace-wallpapers`
+```
+https://github.com/KDE/plasma-workspace-wallpapers
+```
 
 ## For patching
 
 Example:
 
-- `mkdir patches`
-- `cd patches`
-- `curl -O <github-url-of-diff>`
-- `cd ../`
-- `patch -p1 < patches/<diff-file>`
-- `sudo vim patches`
-- `make`
-- `sudo make clean install`
+```
+mkdir patches
+cd patches
+curl -O <github-url-of-diff>
+cd ../
+patch -p1 < patches/<diff-file>
+sudo vim patches
+make
+sudo make clean install
+```

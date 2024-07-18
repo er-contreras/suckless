@@ -54,7 +54,7 @@ git clone https://github.com/chjj/compton
 Dependencies when Fedora is use as distro
 
 ```
-sudo dnf install libXcomposite-devel libXdamage-devel libXrandr-devel libconfig-devel debus-devel libGL-devel pcre-devel
+sudo dnf install libXcomposite-devel libXdamage-devel libXrandr-devel libconfig-devel dbus-devel libGL-devel pcre-devel
 ```
 
 The executables like slstatus and compton needs to be symlink so you have to do the next:

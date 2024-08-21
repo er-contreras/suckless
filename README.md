@@ -60,10 +60,10 @@ sudo dnf install libXcomposite-devel libXdamage-devel libXrandr-devel libconfig-
 The executables like slstatus and compton needs to be symlink so you have to do the next:
 
 ```
-sudo ls -sf ~/.config/suckless/slstatus/slstatus /usr/local/bin
+sudo ln -sf ~/.config/suckless/slstatus/slstatus /usr/local/bin
 ```
 ```
-sudo ls -sf ~/.config/suckless/compton/compton /usr/local/bin
+sudo ln -sf ~/.config/suckless/compton/compton /usr/local/bin
 ```
 
 You have to change `autostart.sh` permissions to exec

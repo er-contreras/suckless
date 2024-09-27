@@ -2,13 +2,7 @@
 
 ## There is a few considerations that you have to take before.
 
-Installation libraries
-
-```
-sudo dnf install xorg gcc libX11-devel libXft-devel libXinerama-devel
-```
-
-Besides any desktop you are using you gonna need to create one
+## To create other sessions with different desktop enviroment
 
 ```
 /usr/share/xsessions
@@ -49,6 +43,12 @@ You gonna need to install and run compton in the next path ~/.config/suckless/
 
 ```
 git clone https://github.com/chjj/compton
+```
+
+Before we need to install in Debian
+
+```
+sudo apt install libxcomposite-dev libxdamage-dev libxrandr-dev libconfig-dev
 ```
 
 Dependencies when Fedora is use as distro

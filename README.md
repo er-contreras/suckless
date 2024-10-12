@@ -48,7 +48,7 @@ git clone https://github.com/chjj/compton
 Before we need to install in Debian
 
 ```
-sudo apt install libxcomposite-dev libxdamage-dev libxrandr-dev libconfig-dev
+sudo apt install libxcomposite-dev libxdamage-dev libxrandr-dev libconfig-dev libdbus-1-dev libglx-dev libgl-dev libdrm-dev libpcre3-dev
 ```
 
 Dependencies when Fedora is use as distro
